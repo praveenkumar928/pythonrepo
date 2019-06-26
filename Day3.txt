@@ -1,0 +1,12 @@
+List initization
+List(0)='apple
+List.Append
+List.insert(1,ranger)
+Delete
+List.pop()--latest one deleted
+List.pop(0) - index
+Sorting
+List.sort()
+
+
+

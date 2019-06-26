@@ -1,0 +1,140 @@
+Use of title tag
+Use of first name and last name
+Fullname={firstname}{lastname}
+Print(fullname)
+For tab before
+Print(\t"praveen")
+New line for \n
+Strip function
+
+
+
+Code:
+
+Python 3.7.3 (v3.7.3:ef4ec6ed12, Mar 25 2019, 21:26:53) [MSC v.1916 32 bit (Intel)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> start
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'start' is not defined
+>>> help
+Type help() for interactive help, or help(object) for help about object.
+>>> print("praveen")
+praveen
+>>> 1+2
+3
+>>> import this
+The Zen of Python, by Tim Peters
+
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
+>>> print("\t praveen")
+         praveen
+>>> print("java\nc\nc++)
+  File "<stdin>", line 1
+    print("java\nc\nc++)
+                       ^
+SyntaxError: EOL while scanning string literal
+>>> print("java\nc\nc++")
+java
+c
+c++
+>>> x,y,z=1,2,3
+>>> print('x\y\z)
+  File "<stdin>", line 1
+    print('x\y\z)
+                ^
+SyntaxError: EOL while scanning string literal
+>>> print('x\y\z')
+x\y\z
+>>> print('{x}\y\z')
+{x}\y\z
+>>> var x,y,z=1,2,3
+  File "<stdin>", line 1
+    var x,y,z=1,2,3
+        ^
+SyntaxError: invalid syntax
+>>> x,y,z=1,2,3
+>>> prin(x)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'prin' is not defined
+>>> print(x)
+1
+>>> print(x"\n"y)
+  File "<stdin>", line 1
+    print(x"\n"y)
+              ^
+SyntaxError: invalid syntax
+>>> print(x,"\n")
+1
+
+>>> print(x,"\n",y)
+1
+ 2
+>>> print(x,"\n"y)
+  File "<stdin>", line 1
+    print(x,"\n"y)
+                ^
+SyntaxError: invalid syntax
+>>> print(x,y)
+1 2
+>>> print(x,y,3)
+1 2 3
+>>> print(x,y,z)
+1 2 3
+>>> firstname="praveen"
+>>> lastname="kumar"
+>>> fullname="{firstname}{lastname}"
+>>> print(fullname)
+{firstname}{lastname}
+>>> fullname=f"{firstname}{lastname}"
+>>> print(fullname)
+praveenkumar
+>>> fullname=f"{firstname} {lastname}"
+>>> print(fullname)
+praveen kumar
+>>> fullname=f"{firstname}"
+>>> print(fullname)
+praveen
+>>> print(strip(" test my 123 "))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'strip' is not defined
+>>> x=strip(" test my 123 ")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'strip' is not defined
+>>> print(" test my 123 ").strip())
+  File "<stdin>", line 1
+    print(" test my 123 ").strip())
+                                  ^
+SyntaxError: invalid syntax
+>>> x="test my 123 "
+>>> print(x.strip())
+test my 123
+>>> print(" test my 123 ".strip())
+test my 123
+>>>
+
+
+
+
+
