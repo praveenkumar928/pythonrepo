@@ -1,0 +1,107 @@
+Python 3.7.3 (v3.7.3:ef4ec6ed12, Mar 25 2019, 21:26:53) [MSC v.1916 32 bit (Intel)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> board ={'color','green'}
+>>> print(print(board['color'])
+... print(board['color'])
+  File "<stdin>", line 2
+    print(board['color'])
+        ^
+SyntaxError: invalid syntax
+>>> print({board['color']})
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'set' object is not subscriptable
+>>> print(f"color is {board['color']}")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'set' object is not subscriptable
+>>> board = {'color','green'}
+>>> board = {'color':'green'}
+>>> print(f"color is {board['color']}")
+color is green
+>>> board = {'color':'green','taste':'soar'}
+>>> print(f"color is {board['color']}")
+color is green
+>>> print(f"color is {board}")
+color is {'color': 'green', 'taste': 'soar'}
+>>> del board['taste']
+>>> print(f"color is {board}")
+color is {'color': 'green'}
+>>> board = {'color':'green','taste':'soar','color':'blue'}
+>>> board = {'color':'green','taste':'soar','color':'blue',
+... }
+>>> print(f"color is {board}")
+color is {'color': 'blue', 'taste': 'soar'}
+>>> board = {'color':'green','taste':'soar','color1':'blue'}
+>>> print(f"color is {board}")
+color is {'color': 'green', 'taste': 'soar', 'color1': 'blue'}
+>>> plc=board['color'].title()
+>>> print(plc)
+Green
+>>> plc=board['color2'].title()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+KeyError: 'color2'
+>>> board = {'color':'green','taste':'soar','color1':'blue'}
+>>> for key1 in board:
+...  print(board.get[key1])
+...  print(board.get[key1])
+...
+Traceback (most recent call last):
+  File "<stdin>", line 2, in <module>
+TypeError: 'builtin_function_or_method' object is not subscriptable
+>>> for key1 in board:
+...  print(board.get[key1\])
+  File "<stdin>", line 2
+    print(board.get[key1\])
+                          ^
+SyntaxError: unexpected character after line continuation character
+>>>  print(board.get['color'])
+  File "<stdin>", line 1
+    print(board.get['color'])
+    ^
+IndentationError: unexpected indent
+>>> board = {'color':'green','taste':'soar','color1':'blue'}
+>>> for key1 in board:
+...  print(board.get['color'])
+...  print(board.get['color'])
+...  print(board.get['color'])
+...  print(board.get['color'])
+...  print(board.get['color'])
+...
+Traceback (most recent call last):
+  File "<stdin>", line 2, in <module>
+TypeError: 'builtin_function_or_method' object is not subscriptable
+>>>
+>>> board = {'color':'green','taste':'soar','color1':'blue'}
+>>> for key1 in board:
+...  print(key1}
+  File "<stdin>", line 2
+    print(key1}
+              ^
+SyntaxError: invalid syntax
+>>>  print(key1)
+  File "<stdin>", line 1
+    print(key1)
+    ^
+IndentationError: unexpected indent
+>>> board = {'color':'green','taste':'soar','color1':'blue'}
+>>> for key1 in board:
+...  print(board.get[key1])
+...
+Traceback (most recent call last):
+  File "<stdin>", line 2, in <module>
+TypeError: 'builtin_function_or_method' object is not subscriptable
+>>>  print(key1)
+  File "<stdin>", line 1
+    print(key1)
+    ^
+IndentationError: unexpected indent
+>>> board = {'color':'green','taste':'soar','color1':'blue'}
+>>> for key1 in board:
+...  print(key1)
+...
+color
+taste
+color1
+>>>
